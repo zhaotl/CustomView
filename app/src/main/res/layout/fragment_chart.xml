@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ztl.customview.ui.view.ProgressView
+        android:id="@+id/progressView"
+        style="@style/NumberProgressBar_Default"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ztl.customview.ui.view.ProgressView
+        android:id="@+id/progressView2"
+        style="@style/NumberProgressBar_Beauty_Red"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:progress_reached_height="3dp"
+        app:progress_unreached_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/progressView" />
+
+    <com.ztl.customview.ui.view.ProgressView
+        android:id="@+id/progressView3"
+        style="@style/NumberProgressBar_Grace_Yellow"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/progressView2"
+        app:progress_reached_height="5dp"
+        app:progress_unreached_height="4dp" />
+
+    <com.ztl.customview.ui.view.chart.PieView
+        android:id="@+id/pieView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/progressView3" />
+
+    <com.ztl.customview.ui.view.chart.BarView
+        android:id="@+id/barView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

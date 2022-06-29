@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CustomView</string>
+
+    <string-array name="custom_view">
+        <item>饼图</item>
+        <item>柱状图</item>
+        <item>瀑布布局</item>
+        <item>图片过滤</item>
+        <item>xfermode</item>
+        <item>canvas</item>
+        <item>贝塞尔曲线</item>
+    </string-array>
+</resources>

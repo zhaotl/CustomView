@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DragBubbleView">
+        <attr name="bubble_radius" format="dimension" />
+        <attr name="bubble_color" format="color" />
+        <attr name="bubble_text" format="string" />
+        <attr name="bubble_textSize" format="dimension" />
+        <attr name="bubble_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FilterView">
+        <attr name="filter_type" format="enum">
+            <enum name="filter_green" value="0" />
+            <enum name="filter_anti" value="1" />
+            <enum name="filter_enhance" value="2" />
+            <enum name="filter_bwColor" value="3" />
+            <enum name="filter_gbColor" value="4" />
+            <enum name="filter_oldColor" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_height" format="dimension" />
+        <attr name="progress_unreached_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>
