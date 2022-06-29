@@ -9,5 +9,6 @@
         <item>xfermode</item>
         <item>canvas</item>
         <item>贝塞尔曲线</item>
+        <item>Path</item>
     </string-array>
 </resources>

@@ -22,6 +22,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
             4 -> XFermodeFragment.newInstance()
             5 -> CanvasFragment.newInstance()
             6 -> BezierFragment.newInstance()
+            7 -> PathFragment.newInstance()
             else -> {
                 EmptyFragment.newInstance()
             }
