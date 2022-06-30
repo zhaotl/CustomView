@@ -51,7 +51,7 @@ class PieView : BaseView {
 
         mCircleWidth = min(measuredWidth.toFloat(), measuredHeight.toFloat())
         Log.d("tag", "~~ circle width = $mCircleWidth")
-        mRadius = mCircleWidth * 0.3f
+        mRadius = mCircleWidth * 0.25f
         arcRect.set(
             mCircleWidth / 2f - mRadius,
             mCircleWidth / 2f - mRadius,

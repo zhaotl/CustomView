@@ -222,8 +222,9 @@ class DragBubbleView(context: Context, attrs: AttributeSet?, defStyleAttr: Int) 
             }
 
             MotionEvent.ACTION_MOVE -> {
-                parent.requestDisallowInterceptTouchEvent(true)
+
                 if (bubbleState != bubble_state_default) {
+                    parent.requestDisallowInterceptTouchEvent(true)
                     bubbleMoveCenter.x = event.x
                     bubbleMoveCenter.y = event.y
                     dist = hypot(
